@@ -351,7 +351,7 @@ colb.write('**CERVICAL CANCER**')
 st.write('')
 df['CX_STATUS'] = df['CX_STATUS'].astype(str)
 
-cx = df[df['CX_STATUS']=='SCREEN'].copy()
+cx = df[df['RESCREEN']=='SCREEN'].copy()
 
 cx = cx[['FACILITY','GD', 'AG','RETURN DATE','CX']].copy()
 cx = cx.set_index('FACILITY')
