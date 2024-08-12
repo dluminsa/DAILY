@@ -14,8 +14,8 @@ st.set_page_config(
     )
 cola, colb, colc = st.columns(3)
 colb.subheader('DAILY LINE LISTS')
-ex = r'ALL.xlsx'
-df = pd.read_excel(ex)
+ex = r'ALL.csv'
+df = pd.read_csv(ex)
 
 
 
