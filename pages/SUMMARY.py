@@ -217,7 +217,7 @@ sc = cx.shape[0]
 
 df['RESCREEN'] = df['RESCREEN'].astype(str)
 
-resc = df[df['CX_STATUS']=='RESCREEN'].copy()
+resc = df[df['RESCREEN']=='RESCREEN'].copy()
 res = resc.shape[0]
 
 
