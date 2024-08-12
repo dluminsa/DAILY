@@ -351,7 +351,7 @@ colb.write('**CERVICAL CANCER**')
 st.write('')
 df['CX_STATUS'] = df['CX_STATUS'].astype(str)
 
-cx = df[df['RESCREEN']=='SCREEN'].copy()
+cx = df[df['CX_STATUS']=='SCREEN'].copy()
 
 cx = cx[['FACILITY','GD', 'AG','RETURN DATE','CX']].copy()
 cx = cx.set_index('FACILITY')
@@ -378,7 +378,7 @@ colb.write('**CERVICAL CANCER RESCREENING**')
 st.write('')
 df['RESCREEN'] = df['RESCREEN'].astype(str)
 
-resc = df[df['CX_STATUS']=='RESCREEN'].copy()
+resc = df[df['RESCREEN']=='RESCREEN'].copy()
 
 resc = resc[['FACILITY','ART', 'GD', 'AG','RETURN DATE','CX','RESCREEN']].copy()
 resc = resc.set_index('FACILITY')
