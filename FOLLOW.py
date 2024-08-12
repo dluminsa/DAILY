@@ -353,7 +353,7 @@ df['CX_STATUS'] = df['CX_STATUS'].astype(str)
 
 cx = df[df['CX_STATUS']=='SCREEN'].copy()
 
-cx = cx[['FACILITY','GD', 'AG','RETURN DATE','CX']].copy()
+cx = cx[['FACILITY','GD','ART','AG','RETURN DATE','CX']].copy()
 cx = cx.set_index('FACILITY')
 b = cx.shape[0]
 
