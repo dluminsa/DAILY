@@ -7,6 +7,8 @@ import time
 from pathlib import Path
 #from streamlit_gsheets import GSheetsConnection
 from datetime import datetime
+st.write('BEING UPDATED, WILL RETURN AFTER THE NEW BUDGETS')
+st.stop()
 
 st.set_page_config(
     page_title = 'DAILY LINE LIST',
