@@ -12,6 +12,8 @@ st.set_page_config(
     page_title = 'DAILY LINE LIST',
     page_icon =":bar_chart"
     )
+st.write('BEING UPDATED, WILL RETURN AFTER THE NEW BUDGETS')
+st.stop()
 cola, colb, colc = st.columns(3)
 colb.subheader('DAILY LINE LISTS')
 ex = r'ALL.csv'
